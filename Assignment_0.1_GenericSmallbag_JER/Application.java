@@ -1,12 +1,13 @@
-/*
- * @author Jared E. Rosenberger
- * 8/25/22
+/**
+ * Application.java tests the methods of Item.java and SmallBag.java to ensure the generics work properly
+ * @author Jared Rosenberger
+ * @version 9/1/22
  * Application.java
+ * Fall 2022
  */
 public class Application {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Item<String> item1 = new Item<String>();
 		item1.setE("Jared E. Rosenberger");
 		Item<Integer> item2 = new Item<Integer>();
@@ -16,5 +17,5 @@ public class Application {
 		System.out.println(bag.getItem().getE());
 		bag.setItem(item2);
 		System.out.println(bag.getItem().getE());
-	}//main
-}//Application.java
+	}//end main()
+}//end Application.java
